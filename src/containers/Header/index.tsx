@@ -8,13 +8,11 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 inset-x-0 w-full z-50 py-4 px-6 md:px-12 bg-background/90 backdrop-blur-lg border-b border-border">
+    <header className="sticky top-0 inset-x-0 w-full z-50 py-4 px-6 md:px-12 bg-background backdrop-blur-lg">
       <CContainer reverse>
         <nav className="flex justify-between items-center max-w-7xl mx-auto">
           <div className="flex justify-center items-center space-x-4">
-            <img src={logo} alt="logo" width={40} />
-
-            <p className="text-2xl font-bold text-white">Ryvit</p>
+            <img src={logo} alt="logo" width={160} />
           </div>
           <div className="md:hidden">
             <button
@@ -55,50 +53,10 @@ const Header = () => {
           >
             <li>
               <a
-                href="#hero"
-                className="text-white hover:text-blue-400 transition block py-2 md:py-0"
+                href="https://docs.ryvit.app"
+                className="text-white hover:text-blue-400 transition block py-2 md:py-0 text-lg"
               >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="#problem"
-                className="text-white hover:text-blue-400 transition block py-2 md:py-0"
-              >
-                Problem
-              </a>
-            </li>
-            <li>
-              <a
-                href="#solution"
-                className="text-white hover:text-blue-400 transition block py-2 md:py-0"
-              >
-                Solutions
-              </a>
-            </li>
-            <li>
-              <a
-                href="#beyond-core"
-                className="text-white hover:text-blue-400 transition block py-2 md:py-0"
-              >
-                More Tools
-              </a>
-            </li>
-            <li>
-              <a
-                href="#why-ryvit"
-                className="text-white hover:text-blue-400 transition block py-2 md:py-0"
-              >
-                Why Ryvit?
-              </a>
-            </li>
-            <li>
-              <a
-                href="#contact"
-                className="text-white hover:text-blue-400 transition block py-2 md:py-0"
-              >
-                Contact
+                Documentation
               </a>
             </li>
           </ul>
