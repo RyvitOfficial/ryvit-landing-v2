@@ -62,6 +62,19 @@ const Hero = () => {
                 </CButton>
               </a>
             </div>
+
+            <a
+              href="https://panel.ryvit.app"
+              className="md:hidden flex items-center justify-center w-fullcursor-pointer select-none"
+            >
+              <CButton
+                size="sm"
+                className="rounded-full px-8 lg:flex border border-foreground/20"
+              >
+                Launch Ryvit
+                <ArrowRight className="w-4 h-4 ml-1" />
+              </CButton>
+            </a>
           </div>
 
           {/* Image Column - Modified to overflow */}
