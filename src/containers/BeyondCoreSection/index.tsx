@@ -6,7 +6,7 @@ import { moreTools } from '../../constants';
 
 const BeyondCoreSection = () => {
   return (
-    <CWrapper className="flex flex-col items-center justify-center py-12 relative">
+    <CWrapper id="beyond" className="flex flex-col items-center justify-center py-12 relative">
       <div className="hidden md:block absolute top-0 -right-1/3 w-72 h-72 bg-primary rounded-full blur-[10rem] -z-1"></div>
       <div className="hidden md:block absolute bottom-0 -left-1/3 w-72 h-72 bg-indigo-600 rounded-full blur-[10rem] -z-1"></div>
       <CContainer>
