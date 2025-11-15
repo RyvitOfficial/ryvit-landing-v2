@@ -47,17 +47,19 @@ const Hero = () => {
               transition={{ duration: 0.7, delay: 0.1 }}
             >
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] mb-6">
-                <span className=" text-white">
-                  The Infrastructure Layer
-                </span>
+                <span className=" text-white">The Infrastructure Layer</span>
                 <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 bg-clip-text text-transparent ml-2">
                   for Soroban Builders
                 </span>
                 <div className="w-[600px] h-[100px] bg-gradient-to-r from-blue-900 via-blue-500 to-blue-600 text-transparent ml-2 absolute top-[90px] -left-10 -z-10 opacity-50 blur-3xl rotate-3 p-5" />
               </h1>
               <p className="text-lg md:text-xl lg:text-2xl text-blue-200/80 font-light">
-                Ryvit handles TTL lifecycles, contract events, and function calls — purpose-built for{' '}
-                <span className="text-white font-medium">Stellar & Soroban</span>.
+                Ryvit handles TTL lifecycles, contract events, and function
+                calls — purpose-built for{' '}
+                <span className="text-white font-medium">
+                  Stellar & Soroban
+                </span>
+                .
               </p>
             </motion.div>
 
@@ -77,7 +79,7 @@ const Hero = () => {
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </CButton>
               </a>
-              <a href="#hero">
+              <a href="https://docs.ryvit.app">
                 <CButton
                   size="lg"
                   className="rounded-full px-8 py-6 text-base md:text-lg font-semibold bg-white/5 hover:bg-white/10 border border-white/20 hover:border-white/30 backdrop-blur-sm transition-all duration-300"
