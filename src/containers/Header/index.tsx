@@ -4,10 +4,16 @@ import CContainer from '../../components/CContainer';
 
 import logo from '../../../public/images/logo.png';
 
+interface NavLink {
+  name: string;
+  href: string;
+  external?: boolean;
+}
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navLinks = [
+  const navLinks: NavLink[] = [
     { name: 'How It Works', href: '#how-it-works' },
     { name: 'Solutions', href: '#solution' },
     { name: 'Tools', href: '#beyond' },
