@@ -6,19 +6,22 @@ import { paymentMethod } from '../../constants';
 
 const PaymentsSection = () => {
   return (
-    <CWrapper id="payments" className="flex flex-col items-center justify-center py-12 relative">
+    <CWrapper
+      id="payments"
+      className="flex flex-col items-center justify-center py-12 relative"
+    >
       <div className="hidden md:block absolute top-0 -right-1/3 w-72 h-72 bg-primary rounded-full blur-[10rem] -z-1"></div>
       <div className="hidden md:block absolute bottom-0 -left-1/3 w-72 h-72 bg-indigo-600 rounded-full blur-[10rem] -z-1"></div>
       <CContainer>
         <div className="max-w-6xl mx-auto text-center mb-16">
-          <SectionBadge title="Beyond the Core" />
+          <SectionBadge title="Flexible Payments" />
 
           <h2 className="text-3xl lg:text-4xl font-semibold mt-6">
-            More Tools for Your Ecosystem
+            Pay Your Way
           </h2>
           <p className="text-muted-foreground mt-6">
-            In addition to our primary tools, we're actively developing a suite
-            of smaller utilities and have a robust roadmap for the future.
+            Choose between direct wallet transactions for full control or
+            pre-funded credits for seamless automation.
           </p>
         </div>
       </CContainer>
@@ -45,8 +48,8 @@ const PaymentsSection = () => {
         </div>
       </CContainer>
       <p className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto text-center">
-        Our roadmap includes testing frameworks, security utilities, and
-        integration SDKs to further enhance your development experience.
+        Both methods support all Ryvit services. Switch between them anytime
+        based on your workflow needs.
       </p>
     </CWrapper>
   );

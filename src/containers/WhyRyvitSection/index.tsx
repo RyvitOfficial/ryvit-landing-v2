@@ -8,16 +8,22 @@ import Icons from '../../assets/icons';
 
 const WhyRyvitSection = () => {
   return (
-    <CWrapper id="why-ryvit" className="flex flex-col items-center justify-center py-12 relative">
+    <CWrapper
+      id="why-ryvit"
+      className="flex flex-col items-center justify-center py-12 relative"
+    >
       <div className="hidden md:block absolute top-0 -right-1/3 w-72 h-72 bg-primary rounded-full blur-[10rem] -z-10"></div>
       <div className="hidden md:block absolute bottom-0 -left-1/3 w-72 h-72 bg-indigo-600 rounded-full blur-[10rem] -z-10"></div>
       <CContainer>
-        <div className="max-w-md mx-auto text-start md:text-center">
-          <CSectionBadge title="Why Choose Ryvit?" />
+        <div className="max-w-3xl mx-auto text-start md:text-center">
+          <CSectionBadge title="Why Ryvit?" />
           <h2 className="text-3xl lg:text-4xl font-semibold mt-6">
-            Ryvit provides an unparalleled advantage for building decentralized
-            applications in the Soroban ecosystem.
+            Stop Fighting Infrastructure. Start Building.
           </h2>
+          <p className="text-muted-foreground mt-6 text-lg">
+            Ryvit eliminates the complexity of Soroban development so you can
+            focus on what matters—shipping great products.
+          </p>
         </div>
       </CContainer>
       <CContainer>

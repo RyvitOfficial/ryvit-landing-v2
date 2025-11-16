@@ -38,13 +38,24 @@ export const perks = [
 export const moreTools = [
   {
     icon: Icons.bolt,
-    title: 'Custom Token Minter',
-    info: 'Mint custom tokens (name, symbol, decimals) on both Testnet and Mainnet with ease.',
+    title: 'Developer-Friendly SDK',
+    info: 'Install our NPM package to simplify event handling, type conversions, and contract interactions in your Node.js projects.',
+    code: 'npm install ryvit',
   },
   {
     icon: Icons.monitor,
-    title: 'Contract Duplication',
-    info: 'Clone contracts across networks, deploying Testnet contracts to Mainnet with identical logic and interface.',
+    title: 'Auto Code Generation',
+    info: 'Get ready-to-use TypeScript code for every contract function, with automatic type conversion helpers built-in.',
+    code: `import { setupRyvit, RyvitStr } from 'ryvit';
+
+setupRyvit(app, {
+  publicKey: "YOUR_KEY",
+  handler: {}
+});
+
+// Type Conversion Helpers
+RyvitStr.u64("32394456") // => 32394456n
+RyvitStr.u64Sc("32394456") // => scvU64({_value: 32394456n})`,
   },
 ];
 
@@ -64,27 +75,32 @@ export const paymentMethod = [
 export const whyRyvit = [
   {
     icon: Icons.bolt,
-    title: 'Streamlined Development',
-    info: 'Accelerate your development cycle by automating repetitive and complex tasks.',
+    title: 'Ship Faster',
+    info: 'Skip weeks of infrastructure setup. Focus on building features while Ryvit handles TTL management, event streaming, and contract interactions.',
   },
   {
     icon: Icons.monitor,
-    title: 'Reduced Errors',
-    info: 'Minimize human error with automated processes for data management and interaction.',
+    title: 'Zero Data Loss',
+    info: 'Never miss a contract event again. Our dedicated infrastructure guarantees delivery even during downtime, with cryptographic verification.',
   },
   {
     icon: Icons.server,
-    title: 'Enhanced Reliability',
-    info: 'Ensure your applications remain robust with guaranteed log delivery and data persistence.',
+    title: 'Dedicated Infrastructure',
+    info: 'Your own Stellar node, RPC, and indexer. Complete real-time data access without rate limits or shared resource bottlenecks.',
   },
   {
     icon: Icons.palette,
-    title: 'Soroban Ecosystem Focus',
-    info: 'Tools specifically designed and optimized for the unique needs of Soroban and Stellar.',
+    title: 'Developer Experience First',
+    info: 'Auto-generated TypeScript code, type-safe helpers, and one-line SDK integration. Write less boilerplate, deploy with confidence.',
   },
   {
     icon: Icons.seo,
-    title: 'Scalable Infrastructure',
-    info: 'Built on a robust infrastructure designed for reliability and future growth.',
+    title: 'Always Up-to-Date',
+    info: 'Our indexer continuously syncs with the blockchain, ensuring every data entry, event, and function call is captured in real-time.',
+  },
+  {
+    icon: Icons.bolt,
+    title: 'Cost Effective',
+    info: 'Pay only for what you use. Start free with testnet credits, scale seamlessly to mainnet without rebuilding your infrastructure.',
   },
 ];

@@ -6,25 +6,16 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center mb-8 space-y-6 md:space-y-0">
           <div className="flex justify-center items-center space-x-4">
-            <img src={logo} alt="logo" width={40} />
+            <img src={logo} alt="logo" width={110} />
 
-            <p className="text-2xl font-bold text-white">Ryvit</p>
           </div>
           <ul className="flex flex-wrap justify-center gap-x-8 gap-y-4">
             <li>
               <a
-                href="#hero"
+                href="#how-it-works"
                 className="text-white/80 hover:text-blue-400 transition"
               >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="#problem"
-                className="text-white/80 hover:text-blue-400 transition"
-              >
-                Problem
+                How It Works
               </a>
             </li>
             <li>
@@ -37,10 +28,10 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#beyond-core"
+                href="#beyond"
                 className="text-white/80 hover:text-blue-400 transition"
               >
-                More Tools
+                Tools
               </a>
             </li>
             <li>
@@ -48,15 +39,7 @@ const Footer = () => {
                 href="#why-ryvit"
                 className="text-white/80 hover:text-blue-400 transition"
               >
-                Why Ryvit?
-              </a>
-            </li>
-            <li>
-              <a
-                href="#contact"
-                className="text-white/80 hover:text-blue-400 transition"
-              >
-                Contact
+                Why Ryvit
               </a>
             </li>
           </ul>

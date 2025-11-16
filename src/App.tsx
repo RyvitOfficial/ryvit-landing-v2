@@ -6,6 +6,7 @@ import SolutionSection from './containers/SolutionSection';
 import WhyRyvitSection from './containers/WhyRyvitSection';
 import Hero from './containers/HeroSection';
 import BeyondCoreSection from './containers/BeyondCoreSection';
+import NPMPackageSection from './containers/NPMPackageSection';
 import NewsLatter from './containers/NewsLatterSection';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <ProblemSection />
         <SolutionSection />
         <BeyondCoreSection />
+        <NPMPackageSection />
         <PaymentsSection />
         <WhyRyvitSection />
         <NewsLatter />
