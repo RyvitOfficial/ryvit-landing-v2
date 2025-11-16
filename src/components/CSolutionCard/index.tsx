@@ -50,7 +50,7 @@ const SolutionToolCard = ({
         <div className="md:w-1/2 flex justify-center">
           <div
             className={cn(
-              'lg:absolute lg:top-[200px] rounded-xl p-2 shadow-2xl border-2 border-blue-700/60 w-full max-w-2xl  flex items-center justify-center text-white/50 text-center overflow-hidden',
+              'lg:absolute lg:top-[200px] rounded-xl p-2 shadow-2xl bg-slate-800/40 border-2 border-blue-700/60 w-full max-w-2xl  flex items-center justify-center text-white/50 text-center overflow-hidden',
               isReversed ? 'lg:-left-40' : 'lg:-right-40',
             )}
           >

@@ -1,9 +1,9 @@
 import CSolutionToolCard from '../../components/CSolutionCard';
 import CSectionBadge from '../../components/CSectionBadge';
 
-import TTLScreen from '../../../public/images/TTL.png';
-import eventScreen from '../../../public/images/Event.png';
-import functionScreen from '../../../public/images/Function.png';
+import TTLScreen from '../../../public/images/ttl.png';
+import eventScreen from '../../../public/images/event.png';
+import functionScreen from '../../../public/images/function.png';
 
 const SolutionSection = () => {
   return (
@@ -22,28 +22,33 @@ const SolutionSection = () => {
 
       <div className="max-w-7xl mx-auto space-y-24">
         <CSolutionToolCard
-          title="Smart Contract Data Key TTL Management"
-          subtitle="Automate the lifecycle of your Soroban contract data."
-          description="Our system automatically tracks, monitors, and renews all data keys associated with your smart contract. Once a contract is added to our platform, we scan all of its data keys, calculate their TTL expiration windows, and either manually or automatically extend them when they approach expiration. A powerful and user-friendly dashboard allows developers to monitor all key statuses and TTL operations in real-time."
+          title="Smart Contract Data TTL Management"
+          subtitle="Track, extend, and restore your contract’s data automatically."
+          description="Ryvit keeps an eye on all persistent data entries in your contracts, monitoring their TTLs to prevent unexpected expirations. Projects can cover the storage and extension fees so users never have to pay. When your internal balance is funded and Auto-Renew is on, Ryvit automatically handles the cost and performs all extensions and restorations for you. Large batches are split into multiple transactions to stay within protocol limits."
           features={[
-            'Automatic tracking and renewal of data keys',
-            'Real-time dashboard for key status and operations',
-            'Configurable manual or automatic extension',
-            'Prevents application logic breakage due to expiry',
+            'Automatically enabled for all contracts — no setup required',
+            'Projects cover storage costs — users pay nothing',
+            'Full TTL monitoring with remaining time visibility',
+            'Manual or fully automated extend/restore (Auto-Renew)',
+            'Automatic cost deduction when internal balance is funded',
+            'Smart batching (40 extend / 20 restore per transaction)',
+            'Email reports for successful or failed operations',
           ]}
           imageUrl={TTLScreen}
         />
 
         <CSolutionToolCard
           title="Smart Contract Interaction Engine"
-          subtitle="Interact with any contract function, effortlessly."
-          description="By parsing the contract interface (ABI), we automatically extract all available functions, along with their inputs and outputs. These functions are presented in a UI where developers can interact with them by entering simple string inputs, without worrying about encoding or data types. Our system converts those inputs into the correct Soroban types, sends the transaction, waits for confirmation, decodes the output, and displays it back to the user. Admin-gated functions are handled via wallet authentication. Additionally, for every contract function, we generate ready-to-use TypeScript/Node.js code snippets that developers can copy into their applications — complete with automatic data conversion using our SDK called Ryvit."
+          subtitle="Call any contract function with a clean, guided UI."
+          description="Ryvit automatically detects all functions of your contract, reads their input and output types, and generates a clean interface for calling them. Developers simply fill in the fields — Ryvit converts values into proper Soroban types, builds and submits the transaction, waits for confirmation, and displays both decoded and raw outputs. For every function Ryvit also generates a ready-to-use TypeScript/Node.js snippet and can produce a complete auto-generated TypeScript project containing all contract methods."
           features={[
-            'Automatic ABI parsing and UI generation',
-            'Simple string inputs, no manual encoding',
-            'Automatic type conversion and transaction handling',
-            'Wallet authentication for admin functions',
-            'Ready-to-use TypeScript/Node.js code snippets with Ryvit SDK',
+            'Automatic detection of all contract functions (ABI parsing)',
+            'Simple input fields — no manual type encoding',
+            'Automatic type conversion, transaction building, and submission',
+            'Decoded + raw outputs for every function call',
+            'Ready-to-use TypeScript/Node.js snippets for each function',
+            'Optional full auto-generated TypeScript project containing all methods',
+            'Powered by the Ryvit SDK for type encoding/decoding, transaction handling, result parsing, and event setup',
           ]}
           imageUrl={functionScreen}
           isReversed={true}
@@ -51,14 +56,15 @@ const SolutionSection = () => {
 
         <CSolutionToolCard
           title="Event and Log Monitoring System"
-          subtitle="Guaranteed, real-time delivery of contract events."
-          description="Soroban contracts emit logs during execution, which must be parsed from the network manually via RPC or Horizon. This is cumbersome, unreliable, and rate-limited. Our system flips this model: instead of developers polling the network for logs, we deliver them directly. Developers simply select the events they want to watch. We guarantee log delivery, persistence (even if the developer's server is down), and reliability — using either HTTP endpoints or push via RabbitMQ. For convenience, we also provide an Express.js-based SDK that sets up a log receiver route on the developer’s server, complete with automatic verification of origin (via digital signature) to prevent spoofed requests."
+          subtitle="Reliable, real-time delivery of your Soroban contract events."
+          description="Ryvit continuously listens to the events emitted by your Soroban contract and delivers the ones you choose directly to your backend — without any need for polling or managing RPC infrastructure. Events are pushed instantly through HTTP or RabbitMQ with guaranteed delivery, and if your server goes offline, they are safely queued and delivered once it's back. Every event is digitally signed so you can verify its authenticity, and each one is provided in both raw form and fully decoded data for easier integration. The Ryvit SDK also includes a ready-made Express.js setup that creates a secure, verified event receiver route in just a few lines of code."
           features={[
-            'Direct delivery of contract logs and events',
-            'Guaranteed log delivery and persistence',
-            'Support for HTTP endpoints and RabbitMQ push',
-            'Express.js SDK for easy integration',
-            'Automatic origin verification via digital signature',
+            'Real-time push delivery of Soroban contract events (HTTP or RabbitMQ)',
+            'Guaranteed delivery with automatic persistence during downtime',
+            'Digital signature + public key verification for trusted event sources',
+            'Express.js-ready event receiver included in the Ryvit SDK',
+            'Events delivered in both raw RPC format and decoded values',
+            'Dashboard visibility for event activity and delivery status',
           ]}
           imageUrl={eventScreen}
         />
